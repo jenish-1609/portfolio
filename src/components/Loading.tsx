@@ -42,12 +42,30 @@ const Loading = ({ percent }: { percent: number }) => {
     target.style.setProperty("--mouse-y", `${y}px`);
   }
 
+  const handleLogoClick = () => {
+    window.open(
+      "https://www.linkedin.com/in/jenish-akoliya-9a3a96229",
+      "_blank"
+    );
+  };
+
   return (
     <>
       <div className="loading-header">
-        <a href="/#" className="loader-title" data-cursor="disable">
-          AM
-        </a>
+        <button
+          onClick={handleLogoClick}
+          className="loader-title"
+          data-cursor="disable"
+          style={{
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+            padding: 0,
+            font: "inherit",
+          }}
+        >
+          JA
+        </button>
         <div className={`loaderGame ${clicked && "loader-out"}`}>
           <div className="loaderGame-container">
             <div className="loaderGame-in">

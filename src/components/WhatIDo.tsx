@@ -87,21 +87,14 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>AI & AUTOMATION</h3>
-              <h4>Workflow Intelligence for Organizations</h4>
+              <h3>AI & ML ENGINEERING</h3>
+              <h4>Intelligent Systems and Applied AI</h4>
               <p>
-                AI specialist helping organizations automate workflows—internal ops
-                and customer-facing—so teams ship faster with less manual work.
+                I build practical AI-powered software using LLMs, agentic
+                workflows, model orchestration, and data-driven pipelines. My
+                focus is on creating intelligent applications that automate
+                work, improve decision-making, and scale reliably in production.
               </p>
-              <h5>Skillset & tools</h5>
-              <div className="what-content-flex">
-                <div className="what-tags">LLMs &amp; agents</div>
-                <div className="what-tags">Workflow design</div>
-                <div className="what-tags">RAG &amp; retrieval</div>
-                <div className="what-tags">Evals &amp; guardrails</div>
-                <div className="what-tags">Integrations</div>
-                <div className="what-tags">Product strategy</div>
-              </div>
               <div className="what-arrow"></div>
             </div>
           </div>
@@ -124,21 +117,51 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BUILD &amp; SCALE</h3>
-              <h4>Shipping AI in Production</h4>
+              <h3>FULL-STACK &amp; CLOUD SYSTEMS</h3>
+              <h4>Scalable Backend and Product Development</h4>
               <p>
-                I build the systems behind it: APIs, data, voice/real-time, and
-                full-stack products—production-ready, not slide decks.
+                I develop full-stack applications using modern frameworks, cloud
+                infrastructure, and distributed systems. Building APIs,
+                integrating services, and shipping products end to end.
+              </p>
+              <div className="what-arrow"></div>
+            </div>
+          </div>
+          <div
+            className="what-content what-noTouch"
+            ref={(el) => setRef(el, 2)}
+          >
+            <div className="what-border1">
+              <svg height="100%">
+                <line
+                  x1="0"
+                  y1="100%"
+                  x2="100%"
+                  y2="100%"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="6,6"
+                />
+              </svg>
+            </div>
+            <div className="what-corner"></div>
+            <div className="what-content-in">
+              <h3>EMBEDDED &amp; SYSTEMS</h3>
+              <h4>Low-Level Software and Hardware Integration</h4>
+              <p>
+                I also work across Linux systems, firmware, real-time software,
+                device communication protocols, and telemetry platforms that
+                connect hardware with reliable data pipelines. Building scalable
+                systems from bare metal to cloud.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Python</div>
-                <div className="what-tags">REST &amp; real-time APIs</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Cloud &amp; infra</div>
+                <div className="what-tags">C &amp; C++</div>
+                <div className="what-tags">Linux &amp; RTOS</div>
+                <div className="what-tags">STM32 &amp; Raspberry Pi</div>
+                <div className="what-tags">UART, SPI, I2C, CAN</div>
+                <div className="what-tags">Bluetooth/BLE &amp; WiFi</div>
+                <div className="what-tags">Telematics &amp; Kafka</div>
               </div>
               <div className="what-arrow"></div>
             </div>

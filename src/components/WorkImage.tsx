@@ -21,6 +21,24 @@ const WorkImage = (props: Props) => {
     }
   };
 
+  if (!props.link) {
+    return (
+      <div className="work-image">
+        <div
+          className="work-image-in"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={() => setIsVideo(false)}
+          data-cursor={"disable"}
+        >
+          <img src={props.image} alt={props.alt} />
+          {isVideo && (
+            <video src={video} autoPlay muted playsInline loop></video>
+          )}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="work-image">
       <a

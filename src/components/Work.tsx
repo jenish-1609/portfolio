@@ -1,36 +1,48 @@
 import { useState, useCallback } from "react";
 import "./styles/Work.css";
-import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "Cloud-Based AI Workflow Orchestrator",
+    category: "AI Workflow Automation Platform",
+    tools:
+      "FastAPI, Celery, Redis, Docker, AWS Lambda, AWS SQS, OpenAI API, LangSmith, Prometheus",
+    image: "/images/workflow-orchestrator.png",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    title: "AI Image and Video Detection Tool",
+    category: "AI Content Detection System",
+    tools:
+      "Python, React.js, Node.js, Flask, PostgreSQL, Supabase, AWS, OpenCV, FFmpeg, Kubernetes",
+    image: "/images/ai-detection.png",
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
+    title: "TransactHub",
+    category: "Real-Time Payment and Wallet Platform",
+    tools:
+      "Turborepo, Next.js, Express, React Context API, Tailwind CSS, Docker, AWS, PostgreSQL",
+    image: "/images/transacthub.png",
   },
   {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "Wireless Telematics Platform",
+    category: "Fleet-Scale Data Collection and Visualization",
+    tools:
+      "C++, Python, Linux, Raspberry Pi, LTE/WiFi/BLE, MQTT, Kafka, InfluxDB, Grafana, Docker, AWS",
+    image: "/images/wireless-telematics.png",
+  },
+  {
+    title: "Embedded Systems Firmware",
+    category: "Real-Time Sensor Acquisition and Control",
+    tools: "C++, C, STM32, FreeRTOS, SPI, I2C, CAN, UART, GDB, Python, Bash",
+    image: "/images/embedded-firmware.png",
+  },
+  {
+    title: "Linux-Based Wireless Evaluation Platform",
+    category: "Rapid Prototyping for Next-Gen Wireless Testing",
+    tools:
+      "C++, Linux, Python, WiFi, Bluetooth/BLE, REST APIs, Docker, PostgreSQL, GitHub Actions",
+    image: "/images/wireless-evaluation.png",
   },
 ];
 
@@ -103,21 +115,12 @@ const Work = () => {
                       </div>
                       <div className="carousel-details">
                         <h4>{project.title}</h4>
-                        <p className="carousel-category">
-                          {project.category}
-                        </p>
+                        <p className="carousel-category">{project.category}</p>
                         <div className="carousel-tools">
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
                         </div>
                       </div>
-                    </div>
-                    <div className="carousel-image-wrapper">
-                      <WorkImage
-                        image={project.image}
-                        alt={project.title}
-                        link={project.link}
-                      />
                     </div>
                   </div>
                 </div>
@@ -130,8 +133,9 @@ const Work = () => {
             {projects.map((_, index) => (
               <button
                 key={index}
-                className={`carousel-dot ${index === currentIndex ? "carousel-dot-active" : ""
-                  }`}
+                className={`carousel-dot ${
+                  index === currentIndex ? "carousel-dot-active" : ""
+                }`}
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to project ${index + 1}`}
                 data-cursor="disable"

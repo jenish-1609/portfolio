@@ -1,10 +1,6 @@
-# 3D Portfolio Website
+# Jenish Akoliya's 3D Portfolio Website
 
-This repository contains the source code for a personal 3D portfolio built with React, TypeScript, Three.js, React Three Fiber, and GSAP. It includes animated page sections, a character scene, custom cursor interactions, and smooth transitions designed for a modern portfolio experience.
-
-Live site: [https://akashrmalhotra.netlify.app/](https://akashrmalhotra.netlify.app/)
-
-![Portfolio Preview](public/images/preview1.png)
+This repository contains the source code for Jenish Akoliya's personal 3D portfolio built with React, TypeScript, Three.js, React Three Fiber, and GSAP. It showcases software engineering projects spanning AI/ML systems, full-stack applications, and embedded systems work. The portfolio features animated page sections, a character scene, custom cursor interactions, and smooth transitions designed for a modern portfolio experience.
 
 ## Table of Contents
 

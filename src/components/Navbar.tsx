@@ -39,20 +39,39 @@ const Navbar = () => {
       ScrollSmoother.refresh(true);
     });
   }, []);
+
+  const handleLogoClick = () => {
+    window.open(
+      "https://www.linkedin.com/in/jenish-akoliya-9a3a96229",
+      "_blank"
+    );
+  };
+
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
-          AM
-        </a>
+        <button
+          onClick={handleLogoClick}
+          className="navbar-title"
+          data-cursor="disable"
+          style={{
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+            padding: 0,
+            font: "inherit",
+          }}
+        >
+          JA
+        </button>
         <a
-          href="https://www.linkedin.com/in/akashrmalhotra/"
+          href="https://www.linkedin.com/in/jenish-akoliya-9a3a96229"
           className="navbar-connect"
           data-cursor="disable"
           target="_blank"
           rel="noreferrer"
         >
-          linkedin.com/in/akashrmalhotra
+          linkedin.com/in/jenish-akoliya
         </a>
         <ul>
           <li>
