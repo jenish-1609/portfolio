@@ -13,7 +13,7 @@
   margin-bottom: 50px;
 }
 
-.work-section h2>span {
+.work-section h2 > span {
   color: var(--accentColor);
 }
 
@@ -86,6 +86,15 @@
   color: #adacac;
   margin: 0;
   font-size: 16px;
+}
+
+.carousel-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #adacac;
+  margin: 12px 0;
+  max-width: 600px;
+  font-weight: 200;
 }
 
 .carousel-tools {
@@ -203,7 +212,8 @@
   justify-content: center;
   align-items: center;
   font-size: 25px;
-  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5),
+  box-shadow:
+    0px 0px 10px 0px rgba(255, 255, 255, 0.5),
     inset 0px 0px 10px 0px #393939;
   transition: 0.3s;
   opacity: 0;

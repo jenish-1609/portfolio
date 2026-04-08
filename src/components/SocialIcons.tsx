@@ -1,4 +1,3 @@
-import { FaLinkedinIn } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
@@ -53,17 +52,7 @@ const SocialIcons = () => {
 
   return (
     <div className="icons-section">
-      <div className="social-icons" data-cursor="icons" id="social">
-        <span>
-          <a
-            href="https://linkedin.com/in/jenish-akoliya"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedinIn />
-          </a>
-        </span>
-      </div>
+      <div className="social-icons" data-cursor="icons" id="social"></div>
       <a
         className="resume-button"
         href="/Jenish_Akoliya_Resume.pdf"

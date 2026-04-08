@@ -41,10 +41,7 @@ const Navbar = () => {
   }, []);
 
   const handleLogoClick = () => {
-    window.open(
-      "https://www.linkedin.com/in/jenish-akoliya-9a3a96229",
-      "_blank"
-    );
+    smoother.scrollTo("#landingDiv", true, "top top");
   };
 
   return (
